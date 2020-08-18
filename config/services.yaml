@@ -4,6 +4,12 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
+    namespaces: 'App'
+    template_dir: '%kernel.project_dir%/common/template'
+    test_template_dir: '%kernel.project_dir%/common/test_template'
+    context_dir: '%kernel.project_dir%/src'
+    tests_dir: '%kernel.project_dir%/tests'
+    logs_dir: '%kernel.project_dir%/var/log'
 
 services:
     # default configuration for services in *this* file
